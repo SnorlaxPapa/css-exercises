@@ -5,6 +5,11 @@ html {
 }
 
 .container {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -22,21 +27,26 @@ html {
 
 .header {
   background-color: #006157;
+  grid-area: 1 / 1 / 1 / 5;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-area: 2 / 1 / 6 / 1;
 }
 
 .nav {
   background-color: #642cde;
+  grid-area: 2 / 2 / 2 / 5;
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-area: 3 / 2 / 6 / 5;
 }
 
 .footer {
+  grid-area: 6 / 1 / 7 / 6;
   background-color: #393f4d;
 }
 
